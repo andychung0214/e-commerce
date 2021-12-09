@@ -1,3 +1,5 @@
+import { AdminModule } from './admin/admin.module';
+import { ClientModule } from './client/client.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -16,7 +18,9 @@ import { LayoutComponent } from './layout/layout.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ClientModule,
+    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]
