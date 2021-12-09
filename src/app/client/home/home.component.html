@@ -1,1 +1,20 @@
-<p>home works!</p>
+<a href="/#/login">
+  <input type="button" class="btn btn-primary" value="logout">
+</a>
+
+<div class='card' *ngFor="let item of detailData">
+
+  <form action="">
+    <label class="form-control" for="category">Category</label>
+    <input class="form-control" type="text" name="" id="category" [value]="item.products[0].category">
+
+    <label class="form-control" for="title">Title</label>
+    <input class="form-control" type="text" name="" id="title" [value]="item.products[0].title">
+
+    <label class="form-control" for="origin_price">Origin Price</label>
+    <input class="form-control" type="text" name="" id="origin_price" [value]="item.products[0].origin_price">
+
+    <label class="form-control" for="price">Price</label>
+    <input class="form-control" type="text" name="" id="price" [value]="item.products[0].price">
+  </form>
+</div>
